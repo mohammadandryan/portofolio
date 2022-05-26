@@ -9,11 +9,12 @@
                         <b>Login</b>
                     </div>
                     <div class="card-body bgdark">
-                        <form action="{{ url('/proses-masuk') }}" method="get">
+                        <form action="{{ url('/proses-masuk') }}" method="post">
+                            @csrf
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
                                 <input name="email" type="email" class=" @error('email') is-invalid @enderror  form-control"
-                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="masukkan email anda">
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="masukkan email anda" autofocus>
                                 @error('email')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror

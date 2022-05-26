@@ -4,7 +4,7 @@
     <div class="col text-center">
         <div class="py-4 d-flex justify-content-between align-items-center">
             <h2 class="mr-auto">Temukan Talenta</h2>
-            <a href="{{ route('talentas.create') }}" class="btn bg-bdark text-white">Tambah Talenta</a>
+            {{-- <a href="{{ route('talentas.create') }}" class="btn bg-bdark text-white">Tambah Talenta</a> --}}
         </div>
 
         @if (session()->has('status'))

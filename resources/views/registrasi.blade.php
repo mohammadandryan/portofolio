@@ -8,7 +8,8 @@
                     <b> Registrasi</b>
                 </div>
                 <div class="card-body bgdark">
-                    <form action="{{ url('/proses-daftar') }}" method="get">
+                    <form action="{{ url('/proses-daftar') }}" method="post">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Nama</label>
                             <input type="text" class=" @error('nama') is-invalid @enderror form-control"
@@ -37,7 +38,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="@error('password') is-invalid @enderror form-control"
+                                 <input type="password" class="@error('password') is-invalid @enderror form-control"
                                 id="exampleInputPassword1" name="cpassword" placeholder="Konfirmasi password anda ">
                             @error('password')
                                 <div class="text-danger">{{ $message }}</div>

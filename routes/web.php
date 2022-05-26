@@ -7,6 +7,7 @@ use App\Http\Controllers\TalentController;
 use App\Http\Requests\DaftarMahasiswa;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\TalentaController;
+use App\Http\Controllers\FileUploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Route::get('/', function () {
 Route::get('/findjob', function () {
     return view('daftar');
 })->name('findjob');
-Route::get('/findtalent', [TalentController::class, 'findTalent'])->name('findtalent');
+Route::get('/findtalent', [TalentaController::class, 'index'])->name('findtalent');
 Route::get('/cari', [TalentController::class, 'cari'])->name('cari');
 Route::get('/profil/{id}', [PageController::class, 'profil'])->name('profil');
 Route::get('/profil/own', [PageController::class, 'ownprofil'])->name('ownprofil');
@@ -35,9 +36,8 @@ Route::get('/profil/own', [PageController::class, 'ownprofil'])->name('ownprofil
 Route::get('/login', function () {
     return view('login');
 })->name('login');
-Route::get('/daftar', function () {
-    return view('registrasi');
-})->name('daftar');
+Route::get('/daftar', [TalentaController::class, 'create'])->name('daftar');
+
 
 Route::get('/about', function () {
     return view('about');
@@ -105,8 +105,17 @@ Route::post('/proses-form', [MahasiswaController::class, 'prosesForm']);
 Route::post('/proses-form-validator', [MahasiswaController::class, 'prosesFormValidator']);
 Route::post('/proses-form-custom', [MahasiswaController::class, 'prosesFormCustom']);
 //CRUD
-Route::get('/proses-daftar', [TalentController::class, 'prosesDaftar']);
-Route::get('/proses-masuk', [TalentController::class, 'prosesMasuk']);
+Route::post('/proses-daftar', [TalentController::class, 'prosesDaftar']);
+Route::post('/proses-masuk', [TalentaController::class, 'prosesMasuk']);
 //
 //CRUD RESTFULL
 route::resource('/talentas', TalentaController::class);
+
+//Upload
+Route::get('/upload', [FileUploadController::class, 'fileUpload']);
+Route::post('/proses-file-upload', [FileUploadController::class, 'prosesFileUpload']);
+
+Route::post('/proses-logout', [TalentaController::class, 'prosesLogout']);
+Route::get('/export-pdf', [TalentaController::class, 'exportPdf']);
+
+

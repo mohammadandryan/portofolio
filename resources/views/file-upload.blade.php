@@ -2,7 +2,7 @@
 @section('content')
     <h2>File Upload</h2>
     <br>
-    <form action="{{ url('file-upload') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ url('proses-file-upload') }}" method="post" enctype="multipart/form-data">
         @csrf
         <label for="berkas" clas>Gambar Profil</label>
         <input type="file" name="berkas" id="berkas" class="form-control-file">

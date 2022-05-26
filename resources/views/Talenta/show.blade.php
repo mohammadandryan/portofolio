@@ -29,20 +29,20 @@
     </div>
     <div class="row justify-content-end align-items-center">
         <div class="col-6 py-4 d-flex justify-content-end align-items-center">
-            <a href="" class=" btn btnyellow ms-2 mb-2"><b>Cari Loker</b></a>
-            <a href="" class=" btn bg-darkgreen ms-2 text-white mb-2"><b>Generate CV</b></a>
-            <a href="{{ url('talentas/' . $talenta->id . '/edit') }}" class=" btn bg-bdark ms-2 text-white mb-2"><b>Edit
+            {{-- <a href="" class=" btn btnyellow ms-2 mb-2"><b>Cari Loker</b></a> --}}
+            <a href="mailto: {{ $talenta->email }}" class=" btn bg-darkgreen ms-2 text-white mb-2"><b>Hubungi lewat email</b></a>
+            {{-- <a href="{{ url('talentas/' . $talenta->id . '/edit') }}" class=" btn bg-bdark ms-2 text-white mb-2"><b>Edit
                     Profil</b></a>
             <form action="{{ route('talentas.destroy', ['talenta' => $talenta->id]) }}" method="POST">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class=" btn bg-darkred ms-2 text-white mt-2"><b>Hapus
                         Akun</b></button>
-            </form>
+            </form> --}}
 
         </div>
     </div>
-    <hr>
+    <hr class="mt-5">
     <div class="row mt-3 justify-content-center">
         <div class=" text-center col-sm-10">
             <h1>Tentang Saya</h1>

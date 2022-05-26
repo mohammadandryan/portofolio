@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="297mm"
+   viewBox="0 0 297 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="logo portofoliyou.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.33730284"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path842"
+       style="fill:#ffffff;stroke-width:4.74289;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       d="M 550.2207 93.388672 A 495.10403 495.10403 0 0 0 56.330078 588.49219 A 495.10403 495.10403 0 0 0 551.43359 1083.5957 A 495.10403 495.10403 0 0 0 1046.5371 588.49219 A 495.10403 495.10403 0 0 0 551.43359 93.388672 A 495.10403 495.10403 0 0 0 550.2207 93.388672 z M 551.32422 261.72266 A 185.02779 185.02779 0 0 1 551.43359 261.72266 A 185.02779 185.02779 0 0 1 736.46094 446.75 A 185.02779 185.02779 0 0 1 551.43359 631.7793 A 185.02779 185.02779 0 0 1 366.40625 446.75 A 185.02779 185.02779 0 0 1 551.32422 261.72266 z M 548.03906 651.35938 L 575.53711 653.39648 L 593.87109 681.91406 L 634.61133 860.15039 L 548.03906 921.26172 L 461.46484 860.15039 L 502.20508 681.91406 L 520.53906 653.39648 L 548.03906 651.35938 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

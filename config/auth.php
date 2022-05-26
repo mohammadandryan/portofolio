@@ -39,8 +39,20 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+
         ],
+        'talentas' => [
+            'driver' => 'session',
+            'provider' => 'talentass',
+        ],
+        'users' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -59,12 +71,17 @@ return [
     |
     */
 
+
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
 
+        'talentass' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Talenta::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

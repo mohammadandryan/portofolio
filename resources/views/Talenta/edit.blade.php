@@ -8,10 +8,16 @@
                     <b> Perbarui Data</b>
                 </div>
                 <div class="card-body bgdark">
-                    <form action="{{ route('talentas.update', ['talenta' => $talenta->id]) }}" method="post">
+                    <form action="{{ route('talentas.update', ['talenta' => $talenta->id]) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
+
                         <div class="mb-3">
+                            <label for="berkas" clas>Gambar Profil</label>
+                            <input type="file" name="berkas" id="berkas" class="form-control-file">
+                            @error('berkas')
+                                <div class="text-danger">{{ $message }}</div>
+                            @enderror
                             <label for="exampleInputEmail1" class=" form-label">Email</label>
                             <input value="{{ $talenta->email }}" type="email"
                                 class=" @error('email') is-invalid @enderror form-control" id="exampleInputEmail1"
@@ -31,7 +37,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input value="{{ $talenta->nama }}" type="password"
+                            <input value="{{ $talenta->password }}" type="password"
                                 class=" @error('password') is-invalid @enderror form-control" id="exampleInputPassword1"
                                 name="password" placeholder="masukkan password ">
                             @error('password')
